@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar/NavBar';
+import Banner from "./components/Banner/Banner"
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import {YEAR} from "./config/constants.js"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+      <div className="App">
+          <header>
+            <NavBar />
+          </header>
+          <div>
+            <Banner />
+          </div>
+          <ItemListContainer greeting = {"Bienvenidos"} />
+          <footer>
+            Creada por Joaquin Canudas Ribo {YEAR}
+          </footer>
+      </div>
+    );
 }
 
 export default App;
