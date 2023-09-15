@@ -11,10 +11,12 @@ const Filters = () => {
     getCategories().then((categories) => setCategories(categories))
   }, [])
 
+  const isActive = true;
+
   return (
-    <nav className='flex justify-center gap-2'>
+    <nav className="filtros">
       {categories.map(({ id, name }) => (
-        <NavLink key={id} end to={`/category/${id}`} className={({ isActive }) => `px-2 py-1 rounded-md hover:bg-indigo-100 ${isActive ? 'bg-indigo-100' : ''}`}>
+        <NavLink key={id} end to={`/category/${id}`} className={`filtroNav ${isActive ? 'active' : ''}`}>
           {name}
         </NavLink>
       ))}

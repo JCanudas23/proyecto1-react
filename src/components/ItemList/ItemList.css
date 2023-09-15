@@ -1,0 +1,13 @@
+.ListGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.ListGroup>.CardItem {
+    flex: 1;
+    min-width: 300px;
+}

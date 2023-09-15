@@ -1,0 +1,14 @@
+.filtros {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.ListGroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

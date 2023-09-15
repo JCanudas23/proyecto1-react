@@ -20,7 +20,7 @@ const ItemDetailContainer = () => {
 
     return(
         <section className="ItemDetailContainer">
-            <Link to={-1} className=""> Ir atras </Link>
+            <Link to={-1} className="GoBackLink"> Ir atras </Link>
             <ItemDetail {...product} />
         </section>
     )

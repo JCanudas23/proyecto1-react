@@ -1,0 +1,19 @@
+.ItemDetailContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.GoBackLink {
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.GoBackLink:hover {
+    text-decoration: underline;
+}

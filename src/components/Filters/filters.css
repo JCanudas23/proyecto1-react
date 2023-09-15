@@ -1,0 +1,19 @@
+.filtros{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.filtroNav{
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s;
+}
+
+.filtroNav:hover{
+    background-color: #ebf4ff;
+}
+
+.filtroNav.active{
+    background-color: #ebf4ff;
+}
