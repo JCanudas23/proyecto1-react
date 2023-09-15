@@ -2,3 +2,35 @@
     width: 1.6rem;
     justify-content: left;
 }
+
+
+/* .cart-widget {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #667EEA;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+  
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 12px;
+    z-index: 10;
+    background-color: #6B7280;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+   */

@@ -1,8 +1,10 @@
 import "./ItemDetail.css"
 import ItemCount from "../ItemCount/ItemCount"
 
+
+
 const ItemDetail = ({id, title, image, price, stock, category, description}) =>{
-    
+        
     return (
         <article className="CardItem">
             <header className="Header">
@@ -11,7 +13,7 @@ const ItemDetail = ({id, title, image, price, stock, category, description}) =>{
                 </h2>
             </header>
             <picture>
-                <img src = {image} alt = {title} className="ItemImg"/>
+                <img src = {image} alt={title} className="ItemImg"/>
             </picture>
             <section>
                 <p className="Info">
@@ -24,9 +26,9 @@ const ItemDetail = ({id, title, image, price, stock, category, description}) =>{
                     Precio: $ {price}
                 </p>
             </section>
-            <footer className="ItemFooter">
+            <div className="ItemFooter">
                 <ItemCount initial={1} stock={stock} onAdd={(quantity) =>console.log("Cantidad agregada ", quantity)} />
-            </footer>
+            </div>
         </article>
     )
 }

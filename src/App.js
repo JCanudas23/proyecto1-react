@@ -10,15 +10,10 @@ import {YEAR} from "./config/constants.js"
 
 function App() {
     return (
-      <div className="App">
+      /* <div className="App"> */
         <BrowserRouter>
-          
-            <header>
-              <NavBar />
-            </header>
-            <div>
-              <Banner />
-            </div>
+            <NavBar />
+            <Banner />
             <Routes>
               <Route path="/" element = {<ItemDetailContainer />} />
               <Route path="/category/:categoryId" element = {<ItemDetailContainer />} />
@@ -31,7 +26,7 @@ function App() {
               Creada por Joaquin Canudas Ribo {YEAR}
             </footer>
         </BrowserRouter>  
-      </div>      
+      /* </div>   */    
     );
 }
 

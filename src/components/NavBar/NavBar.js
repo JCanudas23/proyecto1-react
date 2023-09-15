@@ -15,12 +15,12 @@ const NavBar = () => {
                 </Link>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <div className="navbar-nav">
-                            <div className="Categories">
+                            <ul className="Categories">
                                 <NavLink to={"/category/men"} className={({isActive}) => isActive ? "ActiveOption" : "Option"}>Hombre</NavLink>
                                 <NavLink to={"/category/women"} className={({isActive}) => isActive ? "ActiveOption" : "Option"}>Mujer</NavLink>
                                 <NavLink to={"/category/jewelry"} className={({isActive}) => isActive ? "ActiveOption" : "Option"}>Joyeria</NavLink>
                                 <NavLink to={"/category/electronics"} className={({isActive}) => isActive ? "ActiveOption" : "Option"}>Tecnologia</NavLink>
-                            </div>
+                            </ul>
                             <div className = "carrito-nav"><CartWidget /></div>
                         </div>
                     </div>

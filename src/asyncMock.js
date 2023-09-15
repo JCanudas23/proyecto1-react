@@ -181,27 +181,93 @@ const products = [
     }
 ]
 
-export const getProducts = () => {
-    return new Promise ((resolve) => {
-        setTimeout(()=>{
-            resolve(products)
-        },500)
-    })
-}
+const CATEGORIES = [{
+  id: 'men',
+  name: 'Hombre'
+},
+{
+  id: 'women',
+  name: 'Mujer'
+},
+{
+  id: 'jewelery',
+  name: 'Joyeria'
+},
+{
+  id: 'electronics',
+  name: 'Tecnologia'
+}]
 
-export const getProductsById = (productId) => {
-    return new Promise((resolve) => {
-      setTimeout(() =>{
-        resolve(products.find(prod => prod.id === productId))
+/* export const getCategories = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      return resolve(CATEGORIES)
     }, 500)
   })
 }
 
-export const getProductsByCategory = (category) => {
+export const getProducts = (catId) => {
+    return new Promise ((resolve) => {
+        setTimeout(()=>{
+          if (!catId) return resolve(products)
+
+          const prods = products.filter((p) => p.category === catId)
+          if(prods) return resolve (prods )
+        },500)
+    })
+}
+
+export const getProductsById = (id) => {
+    return new Promise((resolve) => {
+      setTimeout(() =>{
+        const prod = products.find(p => p.id === id)
+        if (prod) return resolve (prod) 
+    }, 500)
+  })
+}
+
+export const getProductsByCategory = (id) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      const filteredProducts = products.filter((product) => product.category === category);
-      resolve(filteredProducts);
+      const filteredProducts = products.filter((product) => product.category === id);
+      if (filteredProducts) return resolve(filteredProducts);
+    }, 500);
+  });
+}; */
+
+export const getCategories = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(CATEGORIES); 
+    }, 500);
+  });
+};
+
+export const getProducts = (categoryId) => { 
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      if (!categoryId) return resolve(products);
+
+      const prods = products.filter((p) => p.category === categoryId); 
+      if (prods) return resolve(prods);
+    }, 500);
+  });
+};
+
+export const getProductsById = (id) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const prod = products.find((p) => p.id === id);
+      if (prod) return resolve(prod);
+    }, 500);
+  });
+};
+
+export const getProductsByCategory = (id) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const filteredProducts = products.filter((product) => product.category === id);
+      if (filteredProducts.length > 0) return resolve(filteredProducts); 
     }, 500);
   });
 };
