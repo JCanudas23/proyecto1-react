@@ -1,11 +1,8 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import NavBar from "./components/NavBar/NavBar";
-/* import Banner from "./components/Banner/Banner" */
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import ItemCount from "./components/ItemCount/ItemCount"
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer"
-import {YEAR} from "./config/constants.js"
+
 
 
 function App() {
