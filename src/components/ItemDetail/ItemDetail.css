@@ -34,3 +34,19 @@
 .ItemFooter {
     text-align: center;
 }
+
+
+.text-danger-bg-danger-subtle {
+    color: #fff;
+    background-color: #dc3545;
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.quantity-available {
+    color: #28a745;
+    font-weight: bold;
+}
+  

@@ -1,0 +1,21 @@
+#contenido-carrito {
+    margin-top: 50px;
+}
+
+.table-responsive {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+td .rounded-circle {
+    padding: 5px 10px;
+}
+
+th.border-0 {
+    font-weight: bold;
+}
+
+.text-center a.btn.btn-primary {
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
