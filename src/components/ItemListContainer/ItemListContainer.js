@@ -8,7 +8,7 @@ import Filters from "../Filters/filters"
 
 const ItemListContainer = ({ greeting }) => {
     const [loading, setLoading] = useState(true);
-    const [products, setProducts] = useState([]);
+    const [items, setProducts] = useState([]);
 
     const { categoryId } = useParams();
 
@@ -16,8 +16,8 @@ const ItemListContainer = ({ greeting }) => {
         setLoading(true);
         
         const collectionRef = categoryId
-        ? query(collection(db, "products"), where("category", "==", categoryId))
-        : collection(db,"products")
+        ? query(collection(db, "items"), where("category", "==", categoryId))
+        : collection(db,"items")
     
         getDocs(collectionRef)
             .then((snapshots) => {
@@ -41,7 +41,7 @@ const ItemListContainer = ({ greeting }) => {
             <div className="filtros">
                 <Filters />
             </div>
-            {loading ? <Loader/> :<ItemList products={products} />}
+            {loading ? <Loader/> :<ItemList products={items} />}
         </div>
     );
 }

@@ -1,3 +1,4 @@
+import "./filters.css"
 import { getCategories } from "../../asyncMock.js"
 import { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
